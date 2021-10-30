@@ -4,15 +4,15 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 const AllOrders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/allorders')
+    fetch('https://morning-beyond-17054.herokuapp.com/allorders')
       .then(res => res.json())
       .then(data => setOrders(data))
   }, []);
-  
+
   const handleDelete = (id) => {
     const proceed = window.confirm('Are you sure, you want to delete');
     if (proceed) {
-      fetch((`http://localhost:5000/order/${id}`), {
+      fetch((`https://morning-beyond-17054.herokuapp.com/order/${id}`), {
         method: 'DELETE',
         headers: { 'content-type': 'application/json' }
       })
@@ -28,23 +28,23 @@ const AllOrders = () => {
 
   const handleUpdate = (id) => {
     console.log(id)
-    fetch(`http://localhost:5000/item/${id}`, {
+    fetch(`https://morning-beyond-17054.herokuapp.com/item/${id}`, {
       method: "PUT",
       headers: { 'content-type': 'application/json' },
-       body:JSON.stringify()
+      body: JSON.stringify()
     })
       .then(res => res.json())
       .then(data => {
-      console.log(data)
+        console.log(data)
       })
-      window.location.reload();
+    window.location.reload();
 
   }
 
 
   return (
     <Container className='my-5'>
-      <h1 className='my-5'style={{fontFamily:"Segoe Script", color:"#E96957"}}>All Order List</h1>
+      <h1 className='my-5' style={{ fontFamily: "Segoe Script", color: "#E96957" }}>All Order List</h1>
       <Row xs={1} md={2} lg={4} className="g-5">
         {orders.map(order => (
           <Col>

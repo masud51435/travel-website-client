@@ -7,7 +7,7 @@ const Cart = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myorder/${user.email}`)
+    fetch(`https://morning-beyond-17054.herokuapp.com/myorder/${user.email}`)
       .then(res => res.json())
       .then(data => setOrders(data))
   }, [orders]);
@@ -16,7 +16,7 @@ const Cart = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm('Are you sure, you want to delete');
     if (proceed) {
-      fetch((`http://localhost:5000/order/${id}`), {
+      fetch((`https://morning-beyond-17054.herokuapp.com/order/${id}`), {
         method: 'DELETE',
         headers: { 'content-type': 'application/json' }
       })
@@ -32,7 +32,7 @@ const Cart = () => {
 
   return (
     <Container className='my-5'>
-      <h1 className='my-5' style={{fontFamily:"Segoe Script", color:"#E96957"}}>My Order List</h1>
+      <h1 className='my-5' style={{ fontFamily: "Segoe Script", color: "#E96957" }}>My Order List</h1>
       <Row xs={1} md={2} lg={4} className="g-5">
         {orders.map(order => (
           <Col>

@@ -8,7 +8,7 @@ const AddLocation = () => {
 
   const onSubmit = data => {
     console.log(data);
-    axios.post('http://localhost:5000/places', data)
+    axios.post('https://morning-beyond-17054.herokuapp.com/places', data)
       .then(res => {
         if (res.data.insertedId) {
           alert('location added successfully')
@@ -20,7 +20,7 @@ const AddLocation = () => {
 
   return (
     <div className='add-location my-5'>
-      <h1 style={{fontFamily:"Segoe Script", color:"#E96957"}}>add New location</h1>
+      <h1 style={{ fontFamily: "Segoe Script", color: "#E96957" }}>add New location</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input placeholder="Enter Your Name" {...register("name", { required: true, maxLength: 20 })} />
         <textarea placeholder="Enter Your Title" {...register("title")} />

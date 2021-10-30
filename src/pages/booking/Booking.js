@@ -12,11 +12,11 @@ const Booking = () => {
   const [items, setItems] = useState([]);
   const [singleItem, setSingleItem] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/places')
+    fetch('https://morning-beyond-17054.herokuapp.com/places')
       .then(res => res.json())
       .then(data => setItems(data));
   }, []);
-  
+
 
   useEffect(() => {
     const foundItem = items.find(item => item._id == bookId)
@@ -28,12 +28,12 @@ const Booking = () => {
   const handleAddToCart = () => {
     singleItem.email = user.email;
     singleItem.status = 'pending';
-    fetch('http://localhost:5000/addCart', {
+    fetch('https://morning-beyond-17054.herokuapp.com/addCart', {
       method: 'POST',
       headers: {
-        'content-type':'application/json'
+        'content-type': 'application/json'
       },
-      body:JSON.stringify(singleItem)
+      body: JSON.stringify(singleItem)
     })
   }
 
@@ -53,7 +53,7 @@ const Booking = () => {
             </Card.Text>
             <Link to="/home"><Button variant="primary">Go Back</Button></Link>
             <Link to='/myorder'>
-            <Button onClick={handleAddToCart} className='ms-5' variant="primary">Add To Cart</Button>
+              <Button onClick={handleAddToCart} className='ms-5' variant="primary">Add To Cart</Button>
             </Link>
           </Card.Body>
         </Card>
