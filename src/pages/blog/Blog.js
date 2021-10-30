@@ -9,8 +9,17 @@ const Blog = () => {
       <h1>Read Our Daily Blog</h1>
       <Container>
         <Row xs={1} md={1} lg={2} className="g-5">
-          <Col>
+          <Col className='cont'>
+           
             <img className=' blog-img' src="https://templates.envytheme.com/traip/default/assets/images/blogs/blog-details-lg-1.jpg" alt="" />
+            
+            <div className='img-text'>
+              <h6><i className="fas fa-calendar-alt"></i> 03 Feb</h6>
+              <h4 style={{ fontWeight: "700" }}>How To Spend A Perfect Weekend In Asia Together</h4>
+              <p className='my-3'>How Not To Get Lost In Foreign Country,I used to travel before there were smartphones, easy access to wifi and all of the other glorious things that make international travel so much easie</p>
+              <h5>Read Article <i className="fas fa-angle-double-right"></i></h5>
+            </div>
+           
           </Col>
           <Col>
             <div className='blog-text' id='fst-1'>

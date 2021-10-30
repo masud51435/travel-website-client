@@ -44,3 +44,29 @@
 .desc h6{
   color: #313041;
 }
+.calc{
+  position: relative;
+  text-align: center;
+
+}
+.calc-text{
+  position: absolute;
+  top: 150px;
+  right: 40px;
+}
+.calc-text h1{
+  font-family: Segoe Script;
+  color: #E96957;
+  font-weight: 800;
+  font-size: 90px;
+  margin: 0%;
+  padding: 0%;
+}
+.calc-text h2{
+  font-family: Segoe Script;
+  font-weight: 700;
+  font-size: 60px;
+  color: #313041;
+  margin: 0%;
+  padding: 0%;
+}

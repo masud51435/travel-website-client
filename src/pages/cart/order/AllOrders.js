@@ -25,7 +25,21 @@ const AllOrders = () => {
         })
     }
   }
-  
+
+  const handleUpdate = (id) => {
+    console.log(id)
+    fetch(`http://localhost:5000/item/${id}`, {
+      method: "PUT",
+      headers: { 'content-type': 'application/json' },
+       body:JSON.stringify()
+    })
+      .then(res => res.json())
+      .then(data => {
+      console.log(data)
+      })
+      window.location.reload();
+
+  }
 
 
   return (
@@ -44,9 +58,13 @@ const AllOrders = () => {
                   {order?.email}
                 </Card.Text>
                 <Card.Text>
+                  {order?.status}...
+                </Card.Text>
+                <Card.Text>
                   {order?.title}
                 </Card.Text>
-                <button onClick={() => handleDelete(order._id)} className='book-btn2'>CANCEL <i className="fas fa-arrow-right"></i></button>
+                <button onClick={() => handleDelete(order._id)} className='book-btn2 mb-3'>CANCEL <i className="fas fa-arrow-right"></i></button>
+                <button onClick={() => handleUpdate(order._id)} className='book-btn2 ms-3'>APPROVED <i className="fas fa-arrow-right"></i></button>
               </Card.Body>
             </Card>
           </Col>

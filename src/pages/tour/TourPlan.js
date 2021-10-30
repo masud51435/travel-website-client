@@ -7,8 +7,12 @@ const TourPlan = () => {
     <div className='py-5 tour' id='tourplan'>
       <Container>
         <Row xs={1} md={1} lg={2} className="g-5">
-          <Col>
+          <Col className='calc'>
             <img className='img-fluid' src="https://tevily-html.vercel.app/assets/images/resources/about-one-img-1.png" alt="" />
+            <div className='calc-text'>
+              <h1>30%</h1>
+              <h2>Discount</h2>
+            </div>
           </Col>
           <Col className='pt-4 desc'>
             <h3 className='my-2'>Get to know us plan</h3>

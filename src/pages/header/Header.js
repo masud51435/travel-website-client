@@ -10,7 +10,7 @@ const Header = () => {
   const { user, logOut } = useAuth();
   return (
     <>
-      <Navbar className="navbar" variant="light" sticky='top' expand="lg" expand='md'>
+      <Navbar className="navbar" variant="light" sticky='top' expand="lg">
         <Container>
           <Navbar.Brand href="#home">
             <img className="imge" src='https://demo.maximumtheme.net/farrell_html/assets/images/logo.png' alt="" />

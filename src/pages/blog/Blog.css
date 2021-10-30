@@ -40,3 +40,17 @@ color: rgb(236, 116, 116);
   border-radius: 15px;
   width: 100%;
 }
+.cont {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.img-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 25px;
+}

@@ -46,6 +46,9 @@ const Cart = () => {
                   {order?.email}
                 </Card.Text>
                 <Card.Text>
+                  {order?.status}...
+                </Card.Text>
+                <Card.Text>
                   {order?.title}
                 </Card.Text>
                 <button onClick={() => handleDelete(order._id)} className='book-btn2'>CANCEL <i className="fas fa-arrow-right"></i></button>

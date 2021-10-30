@@ -16,6 +16,7 @@ const Booking = () => {
       .then(res => res.json())
       .then(data => setItems(data));
   }, []);
+  
 
   useEffect(() => {
     const foundItem = items.find(item => item._id == bookId)
@@ -26,6 +27,7 @@ const Booking = () => {
 
   const handleAddToCart = () => {
     singleItem.email = user.email;
+    singleItem.status = 'pending';
     fetch('http://localhost:5000/addCart', {
       method: 'POST',
       headers: {
