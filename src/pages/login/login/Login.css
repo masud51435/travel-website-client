@@ -1,0 +1,18 @@
+#login{
+  border: 1px solid rgb(177, 177, 177);
+  background-color: cornsilk;
+  border-radius: 15px;
+}
+#login h1{
+  font-family: Segoe Script;
+  color: #E96957;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.google{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: white;
+}

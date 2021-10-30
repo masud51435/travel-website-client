@@ -1,0 +1,13 @@
+.navStyle button{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: coral;
+  border: 1px solid coral;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: larger;
+
+}

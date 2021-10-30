@@ -1,0 +1,15 @@
+.ban-img{
+ background-color: white;
+ opacity: 0.8;
+  
+}
+.banners h1{
+  font-family: Segoe Script;
+  color: #E96957;
+  font-weight: 700;
+  font-size: 50px;
+}
+.banners h2{
+  color: #ffffff;
+  font-weight: 700;
+}

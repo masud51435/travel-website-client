@@ -1,0 +1,27 @@
+.navbar{
+  background-color: #fffffff3;
+  border-bottom: 1px solid rgb(155, 155, 155);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar a{
+  color: rgb(0, 0, 0);
+}
+.imge{
+  height: 6vh;
+  width: 100%;
+}
+.nav-btn{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 2px solid red;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}

@@ -1,0 +1,30 @@
+.footer{
+  
+  background-image: url(https://templates.envytheme.com/traip/default/assets/images/footer-bg.png);
+  padding-top: 430px;
+  padding-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #212529;
+}
+.footer-img{
+  height: 8vh;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.touch{
+  text-align: left;
+  padding-left: 50px;
+}
+.links{
+  text-align: left;
+  padding-left: 50px;
+}
+.foot-icon span{
+  margin: 15px;
+}
+hr{
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}

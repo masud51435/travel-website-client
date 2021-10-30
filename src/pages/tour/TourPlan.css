@@ -1,0 +1,46 @@
+.desc{
+  text-align: left;
+}
+.desc i{
+ color: #E8604C;
+}
+
+.book-btn{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #E8604C;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  margin-top: 35px;
+
+}
+.book-btn:hover{
+  background-color: #313041;
+}
+.tour{
+  background-image: url(https://tevily-html.vercel.app/assets/images/shapes/gallery-map.png);
+  background-color: #FAF5EE;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.desc h3{
+  font-family: Segoe Script;
+  color: #E96957;
+}
+.desc h1{
+  font-family: Microsoft YaHei;
+  font-weight: 700;
+  font-size: 40px;
+  color: #313041;
+}
+.desc h5{
+  color: #66656b;
+}
+.desc h6{
+  color: #313041;
+}
